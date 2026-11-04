@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'test.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -33,9 +35,10 @@ class _HomePageState extends State<HomePage> {
             const Text("welcome to Home Page"),
             ElevatedButton(
               onPressed: () {
-                context.pop();
+                Database.isLoggedIn = false;
+                context.go("/login");
               },
-              child: const Text("go back"),
+              child: const Text("Logout"),
             ),
           ],
         ),
@@ -43,4 +46,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
 

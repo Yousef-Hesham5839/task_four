@@ -92,6 +92,10 @@ class _LoginPageState extends State<LoginPage> {
                 // },
                 child: const Text("go to home "),
               ),
+              TextButton(
+                onPressed: () => context.push("/signup"),
+                child: const Text("Don't have an account? Sign up"),
+              ),
             ],
           ),
         ),
@@ -99,5 +103,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
+
 
 

@@ -101,6 +101,10 @@ class _SignupPageState extends State<SignupPage> {
                   onPressed: _submit,
                   child: const Text('Sign Up'),
                 ),
+                TextButton(
+                  onPressed: () => context.pop(),
+                  child: const Text('Back to Login'),
+                ),
               ],
             ),
           ),
@@ -109,3 +113,4 @@ class _SignupPageState extends State<SignupPage> {
     );
   }
 }
+
