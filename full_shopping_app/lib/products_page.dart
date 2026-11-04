@@ -6,11 +6,11 @@ class ProductsPage extends StatefulWidget {
 
   @override
   State<ProductsPage> createState() {
-    return ProductsPageState();
+    return _ProductsPageState();
   }
 }
 
-class ProductsPageState extends State<ProductsPage> {
+class _ProductsPageState extends State<ProductsPage> {
   @override
   void initState() {
     print(" start Products");
@@ -44,3 +44,4 @@ class ProductsPageState extends State<ProductsPage> {
     );
   }
 }
+

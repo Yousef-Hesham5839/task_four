@@ -3,16 +3,18 @@ import 'package:go_router/go_router.dart';
 
 import 'test.dart';
 
+// In Dart, a leading underscore makes a name private to its library; private State classes hide page implementation details.
+
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() {
-    return LoginPageState();
+    return _LoginPageState();
   }
 }
 
-class LoginPageState extends State<LoginPage> {
+class _LoginPageState extends State<LoginPage> {
   final _keyForm = GlobalKey<FormState>();
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -97,4 +99,5 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 }
+
 
