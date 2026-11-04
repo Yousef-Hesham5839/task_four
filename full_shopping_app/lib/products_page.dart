@@ -1,14 +1,16 @@
-import 'package:flutter/material.dart' ;
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-class ProductsPage extends StatefulWidget{
+
+class ProductsPage extends StatefulWidget {
+  const ProductsPage({super.key});
+
   @override
   State<ProductsPage> createState() {
-    return ProductsPageState() ;
+    return ProductsPageState();
   }
 }
 
-class ProductsPageState extends State<ProductsPage>{
-
+class ProductsPageState extends State<ProductsPage> {
   @override
   void initState() {
     print(" start Products");
@@ -27,13 +29,15 @@ class ProductsPageState extends State<ProductsPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-        Column(
+        child: Column(
           children: [
             Text("welcome to Products Page"),
-            ElevatedButton(onPressed: (){
-              context.pop();
-            }, child: Text("go back"))
+            ElevatedButton(
+              onPressed: () {
+                context.pop();
+              },
+              child: Text("go back"),
+            ),
           ],
         ),
       ),

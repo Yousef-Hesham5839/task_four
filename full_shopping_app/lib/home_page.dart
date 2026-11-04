@@ -1,14 +1,16 @@
-import 'package:flutter/material.dart' ;
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-class HomePage extends StatefulWidget{
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   State<HomePage> createState() {
-    return HomePageState() ;
+    return HomePageState();
   }
 }
 
-class HomePageState extends State<HomePage>{
-
+class HomePageState extends State<HomePage> {
   @override
   void initState() {
     print(" start Home");
@@ -27,13 +29,15 @@ class HomePageState extends State<HomePage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-        Column(
+        child: Column(
           children: [
             Text("welcome to Home Page"),
-            ElevatedButton(onPressed: (){
-              context.pop() ;
-            }, child: Text("go back"))
+            ElevatedButton(
+              onPressed: () {
+                context.pop();
+              },
+              child: Text("go back"),
+            ),
           ],
         ),
       ),
