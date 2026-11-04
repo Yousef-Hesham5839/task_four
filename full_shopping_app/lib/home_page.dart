@@ -21,7 +21,6 @@ class HomePageState extends State<HomePage> {
   @override
   void dispose() {
     print(" finish Home");
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -31,12 +30,12 @@ class HomePageState extends State<HomePage> {
       body: Center(
         child: Column(
           children: [
-            Text("welcome to Home Page"),
+            const Text("welcome to Home Page"),
             ElevatedButton(
               onPressed: () {
                 context.pop();
               },
-              child: Text("go back"),
+              child: const Text("go back"),
             ),
           ],
         ),

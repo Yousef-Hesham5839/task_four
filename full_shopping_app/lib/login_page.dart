@@ -28,7 +28,7 @@ class LoginPageState extends State<LoginPage> {
         _usernameController.clear();
         _passwordController.clear();
         ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text("Wrong info")));
+            .showSnackBar(const SnackBar(content: Text("Wrong info")));
       }
     }
   }
@@ -88,7 +88,7 @@ class LoginPageState extends State<LoginPage> {
                 //   // context.push("/home/products");
                 //   context.go("/home");
                 // },
-                child: Text("go to home "),
+                child: const Text("go to home "),
               ),
             ],
           ),
@@ -97,3 +97,4 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 }
+

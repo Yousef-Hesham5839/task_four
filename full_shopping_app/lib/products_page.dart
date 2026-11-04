@@ -31,12 +31,12 @@ class ProductsPageState extends State<ProductsPage> {
       body: Center(
         child: Column(
           children: [
-            Text("welcome to Products Page"),
+            const Text("welcome to Products Page"),
             ElevatedButton(
               onPressed: () {
                 context.pop();
               },
-              child: Text("go back"),
+              child: const Text("go back"),
             ),
           ],
         ),
